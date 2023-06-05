@@ -1,0 +1,129 @@
+body{
+    margin:0px;
+    padding: 0px;
+}
+
+.statuses{
+    display:flex;
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+
+
+.status{
+display:flex;
+    background: yellow;
+    color: black;
+    width:100%;
+    position:fixed;
+    height:100vh;
+    justify-content: center;
+    align-items:center;
+    font-size:8.5vw;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 200;
+}
+
+
+.status *{
+    position: relative;
+    bottom: 10px;
+    color: white;
+}
+
+
+
+@keyframes moveRight{
+    from{left:100%}
+    to{left: 0%;}
+}
+@keyframes moveLeft{
+    from{left:0%}
+    to{left: 100%;}
+}
+
+
+@keyframes notAvailable{
+    0%{
+        left:0%;
+    }
+    25%{
+        left: 20%;
+    }
+    50%{
+        left:0%;
+    }
+    75%{
+        right: 20%;
+    }
+    100%{
+        right: 20%;
+    }
+}
+
+.status:nth-child(1){
+    z-index: 1;
+    background: cyan 10% ;
+    
+}
+
+.status:nth-child(2){
+    z-index: 2;
+    background: red;
+    left:100%;
+    
+}
+
+.status:nth-child(3){
+    z-index: 3;
+    background: lime;
+    left:100%;
+}
+.status:nth-child(4){
+    z-index: 4;
+    background: green;
+    left:100%;
+}
+
+/* 
+animation: moveRight 1s ease-in forwards 3s;
+*/
+
+.controls{
+    display:flex;
+    position: fixed;
+    z-index: 928283;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ 
+ @keyframes hideControls{
+     from{opacity:1}
+     to{opacity:0}
+ }
+ 
+ 
+
+.left, .right{
+width:100%;
+height: 100vh;
+    font-size: 150%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+    background: rgb(0, 0, 0);
+    animation: hideControls 1s linear forwards 1s;
+    
+}
+
+.left p, .right p{
+    width: 80%;
+}
