@@ -14,9 +14,8 @@ console.log(words, ` <3`)
 
 console.log(abcArr.length - 1);
 
-function clearEffect(){
-    
-    document.querySelector('.left').style.opacity ="0";
+function clearEffect(){    
+document.querySelector('.left').style.opacity ="0";
 document.querySelector('.left').style.animation ="0";
 document.querySelector('.right').style.opacity ="0";
 document.querySelector('.right').style.animation ="0";
@@ -47,13 +46,9 @@ clearEffect();
     currentStatus++;
     if (currentStatus > j){
         currentStatus = j;
-     
-        
     } else{
-    
          f[currentStatus - 1].style.animation = "moveRight 0.3s ease forwards";
     }
-    
 });
 
 // animation: moveRight 1s ease-in forwards 3s;
