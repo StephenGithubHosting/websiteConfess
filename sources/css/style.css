@@ -88,6 +88,15 @@ display:flex;
     left:100%;
 }
 
+.status:nth-child(4) a{
+    position: fixed;
+    font-size: 1vw;
+    background-color: lime;
+    padding: 10px;
+    border-radius: 100px;
+    z-index: 128392170421809;
+}
+
 /* 
 animation: moveRight 1s ease-in forwards 3s;
 */
@@ -141,10 +150,11 @@ height: 100vh;
 }
 
 .namestatus .image{
-    box-shadow: 0px 0px 1px black;
+    /* Undefined stuff */
 }
 
 .namestatus .image img{
+    box-shadow: 0px 0px 4px black;
     width: 45px;
     border-radius: 100px;
     border: solid 2px lime;
